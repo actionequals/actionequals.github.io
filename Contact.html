@@ -8,6 +8,16 @@
     <meta name="page_type" content="np-template-header-footer-from-plugin">
     <title>Contact</title>
     <link rel="stylesheet" href="nicepage.css" media="screen">
+    <style>
+        .captcha {
+            display:table;
+            padding-bottom: 10px;
+        }
+        .captcha > img {
+            vertical-align: middle;
+            padding-right: 10px;
+        }
+    </style>
 <link rel="stylesheet" href="Contact.css" media="screen">
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
@@ -83,7 +93,7 @@
                         <textarea placeholder="Enter your message" rows="4" cols="50" id="message-8db6" name="message" class="u-input u-input-rectangle u-white" required=""></textarea>
                       </div>
 			<script src="https://actionequals.com/getCaptcha/X80Dk1C"></script>
-                      <div class="u-form-group u-form-submit">
+                      <div id="submitdiv" class="u-form-group u-form-submit">
                         <a href="#" class="u-btn u-btn-rectangle u-btn-submit u-button-style u-palette-3-base u-btn-1">Submit</a>
                         <input type="submit" value="submit" class="u-form-control-hidden">
                       </div>
@@ -126,5 +136,11 @@
         <span>Website Builder Software</span>
       </a>. 
     </section>
+
+    <script>
+	var captcha = document.getElementsByClassName('captcha')[0];
+	var submit = document.getElementById('submitdiv');
+	captcha.parentNode.insertBefore(captcha, submit);
+    </script>
   </body>
 </html>
