@@ -4,8 +4,10 @@ The purpose is to show how to configure <form> tags for use with https://actione
 
 See the [blog article]([GitHub Pages + ActionEquals = Awesome](https://actionequals.com/Blog/GitHub-Pages-+-ActionEquals-=-Awesome)) there for a walk through, but basically, after you get an API Key, you provide 
 
+<pre><code>
 <form method=post action='https://actionequals.com/apiKey&f=form'>
 </form>
+</code></pre>
 
 When forms are submitted, they will be stored in a database which you can view from your ActionEquals.com dashboard.  [Sample Dashboard](https://actionequals.com/dashboard). The dashboard supports complex queries, sorting, and csv export.
 
