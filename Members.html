@@ -56,7 +56,7 @@
     </section>
     <script>
       window.onload = function() {
-        var userId = loggedInUser();
+        var userId = await loggedInUser();
         if (!userId) {
           window.location.href = "index.html";
         }
